@@ -170,13 +170,13 @@
 .header__connect
 {
     margin-left: auto;
-    @media (min-width: 1200px)
-    {
-        margin-left: 90px;
-    }
     @media (max-width: 1200px)
     {
-        margin-left: 90px;
+        margin-left: auto;
+    }
+    @media (max-width: 900px)
+    {
+        margin-left: 96px;
     }
     @media (max-width: 768px)
     {

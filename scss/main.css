@@ -41,6 +41,12 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+@media (max-width: 1200px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 
 .container {
   width: 1200px;
@@ -50,17 +56,17 @@ body {
 }
 @media (max-width: 1200px) {
   .container {
-    width: 100%;
+    width: 768px;
   }
 }
 @media (max-width: 768px) {
   .container {
-    width: 100%;
+    width: 480px;
   }
 }
 @media (max-width: 480px) {
   .container {
-    width: 100%;
+    width: 480px;
   }
 }
 
@@ -72,18 +78,6 @@ body {
   text-align: center;
 }
 @media (max-width: 1200px) {
-  .title {
-    font-size: 28px;
-    line-height: 1.18;
-  }
-}
-@media (max-width: 768px) {
-  .title {
-    font-size: 28px;
-    line-height: 1.18;
-  }
-}
-@media (max-width: 480px) {
   .title {
     font-size: 28px;
     line-height: 1.18;
@@ -762,14 +756,14 @@ body {
 .header__connect {
   margin-left: auto;
 }
-@media (min-width: 1200px) {
-  .header__connect {
-    margin-left: 90px;
-  }
-}
 @media (max-width: 1200px) {
   .header__connect {
-    margin-left: 90px;
+    margin-left: auto;
+  }
+}
+@media (max-width: 900px) {
+  .header__connect {
+    margin-left: 96px;
   }
 }
 @media (max-width: 768px) {
@@ -1215,19 +1209,7 @@ body {
   margin-bottom: 50px;
   color: var(--black-color);
 }
-@media screen and (max-width: 1200px) {
-  .gallery__title {
-    margin-bottom: 0;
-    font-size: 0;
-  }
-}
-@media screen and (max-width: 768px) {
-  .gallery__title {
-    margin-bottom: 0;
-    font-size: 0;
-  }
-}
-@media screen and (max-width: 480px) {
+@media (max-width: 1200px) {
   .gallery__title {
     margin-bottom: 0;
     font-size: 0;
@@ -1359,6 +1341,11 @@ body {
 .team__title {
   margin-bottom: 50px;
   color: var(--black-color);
+}
+@media (max-width: 1200px) {
+  .team__title {
+    margin-bottom: 30px;
+  }
 }
 
 .team__list {
@@ -1534,6 +1521,11 @@ body {
 .group__title {
   margin-bottom: 50px;
   color: var(--black-color);
+}
+@media (max-width: 1200px) {
+  .group__title {
+    margin-bottom: 30px;
+  }
 }
 
 .group__list {

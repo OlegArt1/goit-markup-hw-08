@@ -11,6 +11,10 @@
 {
     margin-bottom: 50px;
     color: var(--black-color);
+    @media (max-width: 1200px)
+    {
+        margin-bottom: 30px;
+    }
 }
 .team__list
 {
