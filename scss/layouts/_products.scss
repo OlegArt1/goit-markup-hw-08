@@ -43,6 +43,15 @@
     border: 1px solid var(--light-gray-color);
     background-color: var(--light-gray-color);
     color: var(--black-color);
+    &:hover, &:focus
+    {
+        transform: scale(1.08);
+        border: 1px solid var(--main-brand-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        background-color: var(--main-brand-color);
+        color: var(--white-color);
+    }
+/*
     &:hover
     {
         transform: scale(1.08);
@@ -59,6 +68,7 @@
         background-color: var(--main-focus-color);
         color: var(--white-color);
     }
+*/
 }
 .product__list
 {
@@ -68,10 +78,12 @@
     grid-gap: 30px;
     @media screen and (max-width: 1200px)
     {
+        flex-direction: row;
         flex-wrap: wrap;
     }
     @media screen and (max-width: 768px)
     {
+        flex-direction: row;
         flex-wrap: wrap;
     }
     @media screen and (max-width: 480px)
@@ -133,7 +145,9 @@
     {
         transform: scale(1.05);
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        background-color: var(--main-brand-color);
     }
+/*
     &:hover
     {        
         background-color: var(--main-brand-color);
@@ -142,6 +156,7 @@
     {
         background-color: var(--main-focus-color);
     }
+*/
 }
 .product__block-overlay
 {
@@ -226,10 +241,12 @@
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--black-color);
+/*
     .product__link:hover &, .product__link:focus &
     {
         color: var(--white-color);
     }
+*/
 }
 .product__list-type
 {
@@ -237,9 +254,11 @@
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--gray-color);
+/*
     .product__link:hover &, .product__link:focus &
     {
         color: var(--white-color);
     }
+*/
 }
 /* ===== ===== */

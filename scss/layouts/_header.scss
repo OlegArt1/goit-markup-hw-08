@@ -1,10 +1,10 @@
 /* ==========HEADER========== */
 .header
 {
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     border-bottom: 1px solid var(--border-bottom-header-color);
-    background-color: var(--white-color);
+    /* background-color: var(--white-color); */
 }
 .header__container
 {
@@ -92,6 +92,11 @@
     {
         transform: scale(0.98);
     }
+    &:hover, &:focus
+    {
+        color: var(--main-brand-color);
+    }
+/*
     &:hover
     {
         color: var(--main-brand-color);
@@ -100,6 +105,7 @@
     {
         color: var(--main-focus-color);
     }
+*/
 /*
     &:hover::after
     {
