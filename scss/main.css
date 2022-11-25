@@ -1153,6 +1153,16 @@ body {
   text-transform: uppercase;
   color: var(--black-color);
 }
+@media (max-width: 768px) {
+  .description__list-title {
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .description__list-title {
+    text-align: center;
+  }
+}
 
 .description__list-text {
   font-size: 14px;
@@ -1166,11 +1176,44 @@ body {
 .gallery {
   padding-top: 0;
 }
+@media screen and (max-width: 1200px) {
+  .gallery {
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gallery {
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .gallery {
+    padding-bottom: 0;
+  }
+}
 
 /* .gallery__container {} */
 .gallery__title {
   margin-bottom: 50px;
   color: var(--black-color);
+}
+@media screen and (max-width: 1200px) {
+  .gallery__title {
+    margin-bottom: 0;
+    font-size: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gallery__title {
+    margin-bottom: 0;
+    font-size: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .gallery__title {
+    margin-bottom: 0;
+    font-size: 0;
+  }
 }
 
 .gallery__list {
@@ -1181,18 +1224,21 @@ body {
   .gallery__list {
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 0;
   }
 }
 @media screen and (max-width: 768px) {
   .gallery__list {
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 0;
   }
 }
 @media screen and (max-width: 480px) {
   .gallery__list {
     flex-direction: column;
     flex-wrap: nowrap;
+    gap: 0;
   }
 }
 
@@ -1201,6 +1247,13 @@ body {
   overflow: hidden;
   width: 370px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  /* 
+      &:hover
+      {
+          transform: scale(0.98);
+          border: 5px solid var(--main-brand-color);
+      }
+  */
 }
 .gallery__item::before {
   content: attr(data-sale);
@@ -1220,10 +1273,6 @@ body {
   background-color: rgba(47, 48, 58, 0.8);
   color: var(--white-color);
 }
-.gallery__item:hover {
-  transform: scale(0.98);
-  border: 5px solid var(--main-brand-color);
-}
 @media screen and (max-width: 1200px) {
   .gallery__item {
     width: 370px;
@@ -1242,22 +1291,40 @@ body {
 
 /* .gallery__article-block {} */
 /* .gallery__link {} */
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .gallery__image {
     width: 370px;
     height: 294px;
   }
 }
+@media screen and (max-width: 1200px) {
+  .gallery__image {
+    width: 0;
+    height: 0;
+    /*
+            width: 370px;
+            height: 294px;
+    */
+  }
+}
 @media screen and (max-width: 768px) {
   .gallery__image {
-    width: 350px;
-    height: 270px;
+    width: 0;
+    height: 0;
+    /*
+            width: 350px;
+            height: 270px;
+    */
   }
 }
 @media screen and (max-width: 480px) {
   .gallery__image {
-    width: 360px;
-    height: 280px;
+    width: 0;
+    height: 0;
+    /*
+            width: 360px;
+            height: 280px;
+    */
   }
 }
 
@@ -1689,7 +1756,6 @@ body {
 .product__link:hover, .product__link:focus {
   transform: scale(1.05);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  background-color: var(--main-brand-color);
 }
 
 .product__block-overlay {
@@ -1869,7 +1935,7 @@ body {
 }
 @media screen and (max-width: 1200px) {
   .footer__address {
-    text-align: left;
+    text-align: center;
   }
 }
 @media screen and (max-width: 768px) {
