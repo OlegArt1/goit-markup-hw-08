@@ -91,12 +91,13 @@
     &:hover, &:focus
     {
         transform: scale(0.98);
-    }
-    &:hover, &:focus
-    {
         color: var(--main-brand-color);
     }
 /*
+    &:hover, &:focus
+    {
+        transform: scale(0.98);
+    }
     &:hover
     {
         color: var(--main-brand-color);
@@ -157,6 +158,7 @@
     @extend %menu-active;
     background-color: var(--main-brand-color);
 }
+/*
 [id*="contact"]::after
 {
     content: '';
@@ -164,6 +166,7 @@
     @extend %menu-active;
     background-color: var(--main-brand-color);
 }
+*/
 .header__connect
 {
     margin-left: auto;
@@ -237,6 +240,12 @@
     .header__menu-contact-link:hover &, .header__menu-contact-link:focus &
     {
         transform: scale(0.98);
+        fill: var(--main-brand-color);
+    }
+/*
+    .header__menu-contact-link:hover &, .header__menu-contact-link:focus &
+    {
+        transform: scale(0.98);
     }
     .header__menu-contact-link:hover &
     {
@@ -246,6 +255,7 @@
     {
         fill: var(--main-focus-color);
     }
+*/
     @media (max-width: 1900px)
     {
         margin-right: 10px;
@@ -281,6 +291,12 @@
     .header__menu-contact-link:hover &, .header__menu-contact-link:focus &
     {
         transform: scale(0.98);
+        color: var(--main-brand-color);
+    }
+/*
+    .header__menu-contact-link:hover &, .header__menu-contact-link:focus &
+    {
+        transform: scale(0.98);
     }
     .header__menu-contact-link:hover &
     {
@@ -290,6 +306,7 @@
     {
         color: var(--main-focus-color);
     }
+*/
     @media (min-width: 1200px)
     {
         font-size: 14px;

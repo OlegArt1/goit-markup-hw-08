@@ -16,10 +16,12 @@
     gap: 30px;
     @media screen and (max-width: 1200px)
     {
+        flex-direction: row;
         flex-wrap: wrap;
     }
     @media screen and (max-width: 768px)
     {
+        flex-direction: row;
         flex-wrap: wrap;
     }
     @media screen and (max-width: 480px)
