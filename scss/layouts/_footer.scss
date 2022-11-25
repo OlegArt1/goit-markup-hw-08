@@ -246,12 +246,12 @@
     @media screen and (max-width: 1200px)
     {
         padding-top: 60px;
-        margin-left: 93px;
+        margin-left: 0;
     }
     @media screen and (max-width: 920px)
     {
         padding-top: 60px;
-        margin-left: 93px;
+        margin-left: 0;
     }
     @media screen and (max-width: 768px)
     {
@@ -279,16 +279,15 @@
     }
     @media screen and (max-width: 1200px)
     {
-        width: 100%;
         display: flex;
         justify-content: center;
-        flex-direction: row;
+        flex-direction: column;
     }
     @media screen and (max-width: 900px)
     {
         display: flex;
         justify-content: center;
-        flex-direction: row;
+        flex-direction: column;
     }
     @media screen and (max-width: 768px)
     {
@@ -319,9 +318,16 @@
     }
     @media screen and (max-width: 1200px)
     {
-        width: 358px;
-        margin-right: 12px;
+        /* width: 358px; */
+        width: 100%;
+        margin-right: 0;
     }
+    @media screen and (max-width: 900px)
+    {
+        /* width: 450px; */
+        width: 100%;
+        margin-right: 0;
+    }    
     @media screen and (max-width: 768px)
     {
         /* width: 450px; */
@@ -344,8 +350,18 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     background-color: var(--main-brand-color);
     color: var(--white-color);
+    @media screen and (max-width: 1200px)
+    {
+        width: 200px;
+        height: 50px;
+        margin: 20px auto 0;
+        display: block;
+    }
     @media screen and (max-width: 900px)
     {
+        width: 180px;
+        height: 45px;
+        margin: 20px auto 0;
         display: block;
     }
     @media screen and (max-width: 768px)
