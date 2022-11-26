@@ -1,359 +1,395 @@
 /* ==========HEADER========== */
-.header
-{
+.header {
     /* position: fixed; */
     width: 100%;
+    height: auto;
     border-bottom: 1px solid var(--border-bottom-header-color);
-    /* background-color: var(--white-color); */
+    background-color: var(--white-color);
 }
-.header__container
-{
+.header__container {
+    @extend %list;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
+.header__navigation {
     @extend %list;
 }
-.header__navigation
-{
-    @extend %list;
-}
-.header__logotype
-{
-    margin-right: 93px;
+.header__logotype {
     display: inline-block;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--black-color);
-    @media (min-width: 1200px)
-    {
+    @media (min-width: 1200px) {
         margin-right: 93px;
+        font-size: 26px;
+        line-height: 1.19;
     }
-    @media (max-width: 1200px)
-    {
-        margin-right: 93px;
+    @media (max-width: 1200px) {
+        margin-right: 88px;
+        font-size: 26px;
+        line-height: 1.19;
     }
-    @media (max-width: 768px)
-    {
-        margin-right: 70px;
+    @media (max-width: 900px) {
+        margin-right: 76px;
+        font-size: 24px;
+        line-height: 1.17;
     }
-    @media (max-width: 620px)
-    {
-        margin-right: 93px;
+    @media (max-width: 768px) {
+        margin-right: 60px;
+        font-size: 24px;
+        line-height: 1.17;
     }
-    @media (max-width: 480px)
-    {
-        margin-right: 93px;
+    @media (max-width: 620px) {
+        margin-right: 0;
+        font-size: 22px;
+        line-height: 1.1;
+    }
+    @media (max-width: 480px) {
+        margin-right: 0;
+        font-size: 22px;
+        line-height: 1.1;
     }
 }
-.header__logotype-color-text
-{
+.header__logotype-color-text {
     color: var(--main-brand-color);
 }
-.header__menu-list
-{
+.header__menu-list {
     @extend %list;
     flex-direction: row;
-    @media screen and (min-width: 1200px)
-    {
+    @media screen and (min-width: 1200px) {
         gap: 50px;
     }
-    @media screen and (max-width: 1200px)
-    {
-        gap: 30px;
+    @media screen and (max-width: 1200px) {
+        gap: 40px;
     }
-    @media  screen and (max-width: 768px)
-    {
+    @media screen and (max-width: 900px) {
         gap: 20px;
     }
-    @media screen and (max-width: 620px)
-    {
+    @media screen and (max-width: 768px) {
+        gap: 10px;
+    }
+    @media screen and (max-width: 680px) {
         gap: 0;
     }
-    @media screen and (max-width: 480px)
-    {
+    @media screen and (max-width: 480px) {
         gap: 0;
     }
 }
-/* .header__menu-item {} */
-.header__menu-link
-{
+.header__menu-link {
     position: relative;
     padding-top: 32px;
     padding-bottom: 32px;
     display: inline-block;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
     letter-spacing: 0.02em;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
                 color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     color: var(--black-color);
-    &:hover, &:focus
-    {
-        transform: scale(0.98);
-        color: var(--main-brand-color);
-    }
-/*
-    &:hover, &:focus
-    {
+    &:hover, &:focus {
         transform: scale(0.98);
     }
-    &:hover
-    {
+    &:hover {
         color: var(--main-brand-color);
     }
-    &:focus
-    {
+    &:focus {
         color: var(--main-focus-color);
     }
-*/
-/*
-    &:hover::after
-    {
+    &:hover::after {
         content: '';
         position: absolute;
+        width: 100%;
+        height: 4px;
         @extend %menu-active;
         background-color: var(--main-brand-color);
     }
-    &:focus::after
-    {
+    &:focus::after {
         content: '';
         position: absolute;
+        width: 100%;
+        height: 4px;
         @extend %menu-active;
         background-color: var(--main-focus-color);
     }
-*/
-    @media screen and (min-width: 1200px)
-    {
+    @media screen and (min-width: 1200px) {
         font-size: 14px;
+        line-height: 1.14;
     }
-    @media screen and (max-width: 1200px)
-    {
+    @media screen and (max-width: 1200px) {
         font-size: 14px;
+        line-height: 1.14;
     }
-    @media screen and (max-width: 768px)
-    {
+    @media screen and (max-width: 900px) {
         font-size: 12px;
+        line-height: 1.17;
     }
-    @media screen and (max-width: 620px)
-    {
+    @media screen and (max-width: 768px) {
+        font-size: 12px;
+        line-height: 1.17;
+    }
+    @media screen and (max-width: 680px) {
         font-size: 0;
+        line-height: 0;
     }
-    @media screen and (max-width: 480px)
-    {
+    @media screen and (max-width: 480px) {
         font-size: 0;
+        line-height: 0;
     }
 }
-[id*="index"]::after
-{
+[id*="index"]::after {
     content: '';
     position: absolute;
+    width: 100%;
+    height: 4px;
     @extend %menu-active;
     background-color: var(--main-brand-color);
 }
-[id*="portfolio"]::after
-{
+[id*="portfolio"]::after {
     content: '';
     position: absolute;
+    width: 100%;
+    height: 4px;
     @extend %menu-active;
     background-color: var(--main-brand-color);
 }
-/*
-[id*="contact"]::after
-{
+[id*="contact"]::after {
     content: '';
     position: absolute;
+    width: 100%;
+    height: 4px;
     @extend %menu-active;
     background-color: var(--main-brand-color);
 }
-*/
-.header__connect
-{
+.header__connect {
     margin-left: auto;
-    @media (max-width: 1200px)
-    {
-        margin-left: auto;
+}
+.header__menu-contact-list {
+    @extend %list;
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        gap: 40px;
     }
-    @media (max-width: 900px)
-    {
-        margin-left: 96px;
+    @media screen and (max-width: 1200px) {
+        flex-direction: column;
+        gap: 15px;
     }
-    @media (max-width: 768px)
-    {
-        margin-left: 40px;
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+        gap: 15px;
     }
-    @media (max-width: 480px)
-    {
-        margin-left: 20px;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: 10px;
+    }
+    @media screen and (max-width: 680px) {
+        flex-direction: column;
+        gap: 0;
+    }
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+        gap: 0;
     }
 }
-.header__menu-contact-list
-{
+.header__menu-contact-item {
     position: relative;
+}
+.header__menu-contact-link {
     @extend %list;
-    @media screen and (min-width: 1200px)
-    {
+    @media screen and (min-width: 1200px) {
         padding-top: 32px;
         padding-bottom: 32px;
-        flex-direction: row;
-        gap: 30px;
     }
-    @media screen and (max-width: 1200px)
-    {
-        flex-direction: column;
-        gap: 15px;
+    @media screen and (max-width: 1200px) {
+        padding-top: 0;
+        padding-bottom: 0;
     }
-    @media screen and (max-width: 768px)
-    {
-        flex-direction: column;
-        gap: 15px;
+    @media screen and (max-width: 900px) {
+        padding-top: 0;
+        padding-bottom: 0;
     }
-}
-/* .header__menu-contact-item {} */
-/* .header__menu-contact-block {} */
-.header__menu-contact-link
-{
-    @extend %list;
-/*
-    &:hover::after
-    {
+    @media screen and (max-width: 768px) {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    @media screen and (max-width: 680px) {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    @media screen and (max-width: 480px) {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    &:hover::after {
         content: '';
         position: absolute;
         @extend %menu-active;
-        background-color: var(--main-brand-color);
+        @media (min-width: 1200px) {
+            width: 100%;
+            height: 4px;
+            background-color: var(--main-brand-color);
+        }
+        @media (max-width: 1200px) {
+            width: 100%;
+            height: 4px;
+            background-color: var(--main-brand-color);
+        }
+        @media (max-width: 900px) {
+            width: 0;
+            height: 0;
+            background-color: var(--white-color);
+        }
+        @media (max-width: 768px) {
+            width: 0;
+            height: 0;
+            background-color: var(--white-color);
+        }
+        @media (max-width: 680px) {
+            width: 0;
+            height: 0;
+            background-color: var(--white-color);
+        }
+        @media (max-width: 480px) {
+            width: 0;
+            height: 0;
+            background-color: var(--white-color);
+        }
     }
-    &:focus::after
-    {
+    &:focus::after {
         content: '';
         position: absolute;
         @extend %menu-active;
-        background-color: var(--main-focus-color);
-    }    
-*/
+        @media (min-width: 1200px) {
+            width: 100%;
+            height: 4px;
+            background-color: var(--main-focus-color);
+        }
+        @media (max-width: 1200px) {
+            width: 100%;
+            height: 4px;
+            background-color: var(--main-focus-color);
+        }
+        @media (max-width: 900px) {
+            width: 0;
+            height: 0;
+            background-color: var(--white-color);
+        }
+        @media (max-width: 768px) {
+            width: 0;
+            height: 0;
+            background-color: var(--white-color);
+        }
+        @media (max-width: 680px) {
+            width: 0;
+            height: 0;
+            background-color: var(--white-color);
+        }
+        @media (max-width: 480px) {
+            width: 0;
+            height: 0;
+            background-color: var(--white-color);
+        }
+    }
 }
-.header__menu-contact-icon
-{
-    margin-right: 10px;
+.header__menu-contact-icon {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
-                fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     fill: var(--gray-color);
-    .header__menu-contact-link:hover &, .header__menu-contact-link:focus &
-    {
-        transform: scale(0.98);
-        fill: var(--main-brand-color);
-    }
-/*
-    .header__menu-contact-link:hover &, .header__menu-contact-link:focus &
-    {
+    .header__menu-contact-link:hover &, .header__menu-contact-link:focus & {
         transform: scale(0.98);
     }
-    .header__menu-contact-link:hover &
-    {
+    .header__menu-contact-link:hover & {
         fill: var(--main-brand-color);
     }
-    .header__menu-contact-link:focus &
-    {
+    .header__menu-contact-link:focus & {
         fill: var(--main-focus-color);
     }
-*/
-    @media (max-width: 1900px)
-    {
+    @media (min-width: 1200px) {
         margin-right: 10px;
     }
-    @media (max-width: 1200px)
-    {
-        margin-right: 5px;
+    @media (max-width: 1200px) {
+        margin-right: 10px;
     }
-    @media (max-width: 768px)
-    {
-        margin-right: 5px;
+    @media (max-width: 900px) {
+        margin-right: 8px;
     }
-    @media (max-width: 620px)
-    {
+    @media (max-width: 768px) {
+        margin-right: 8px;
+    }
+    @media (max-width: 680px) {
         width: 0;
         height: 0;
     }
-    @media (max-width: 480px)
-    {
+    @media (max-width: 480px) {
         width: 0;
         height: 0;
     }
 }
-.header__menu-contact-text
-{
+.header__menu-contact-text {
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
     letter-spacing: 0.02em;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
-                color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     color: var(--gray-color);
-    .header__menu-contact-link:hover &, .header__menu-contact-link:focus &
-    {
-        transform: scale(0.98);
-        color: var(--main-brand-color);
-    }
-/*
-    .header__menu-contact-link:hover &, .header__menu-contact-link:focus &
-    {
+    .header__menu-contact-link:hover &, .header__menu-contact-link:focus & {
         transform: scale(0.98);
     }
-    .header__menu-contact-link:hover &
-    {
+    .header__menu-contact-link:hover & {
         color: var(--main-brand-color);
     }
-    .header__menu-contact-link:focus &
-    {
+    .header__menu-contact-link:focus & {
         color: var(--main-focus-color);
     }
-*/
-    @media (min-width: 1200px)
-    {
+    @media (min-width: 1200px) {
         font-size: 14px;
-    }    
-    @media (max-width: 1200px)
-    {
+        line-height: 1.14;
+    }
+    @media (max-width: 1200px) {
         font-size: 14px;
-    }    
-    @media (max-width: 768px)
-    {
+        line-height: 1.14;
+    }
+    @media (max-width: 900px) {
         font-size: 12px;
+        line-height: 1.17;
     }
-    @media (max-width: 620px)
-    {
-        font-size: 0;
+    @media (max-width: 768px) {
+        font-size: 12px;
+        line-height: 1.17;
     }
-    @media (max-width: 480px)
-    {
+    @media (max-width: 680px) {
         font-size: 0;
+        line-height: 0;
+    }
+    @media (max-width: 480px) {
+        font-size: 0;
+        line-height: 0;
     }
 }
-/* .header__mobile-menu {} */
-/* .header__mobile-menu-link {} */
-.header__mobile-menu-icon
-{
-    @media (min-width: 1200px)
-    {
+.header__mobile-menu-icon {
+    &:hover {
+        fill: var(--main-brand-color);
+    }
+    @media (min-width: 1200px) {
         width: 0;
         height: 0;
     }
-    @media (max-width: 1200px)
-    {
+    @media (max-width: 1200px) {
         width: 0;
         height: 0;
     }
-    @media (max-width: 768px)
-    {
+    @media (max-width: 900px) {
         width: 0;
         height: 0;
     }
-    @media (max-width: 620px)
-    {
+    @media (max-width: 768px) {
+        width: 0;
+        height: 0;
+    }
+    @media (max-width: 680px) {
         width: 24px;
         height: 16px;
     }
-    @media (max-width: 480px)
-    {
+    @media (max-width: 480px) {
         width: 24px;
         height: 16px;
     }
