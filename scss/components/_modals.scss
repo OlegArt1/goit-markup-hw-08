@@ -226,7 +226,7 @@
 .modal__checkbox-text
 {
     position: relative;
-    @extend %list-column;
+    @extend %list-align;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
