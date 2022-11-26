@@ -1,21 +1,17 @@
-%list
-{
+%list {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-%list-justify
-{
+%list-justify {
     display: flex;
     justify-content: center;
 }
-%list-align
-{
+%list-align {
     display: flex;
     align-items: center;
 }
-%menu-active
-{
+%menu-active {
     left: 0;
     bottom: 0;
     width: 100%;

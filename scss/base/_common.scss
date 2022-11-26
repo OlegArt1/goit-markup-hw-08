@@ -1,21 +1,28 @@
-body
-{
+body {
     font-family: 'Roboto', sans-serif;
 }
-.list
-{
+.list {
     list-style: none;
 }
-.link
-{
+.link {
     text-decoration: none;
 }
-.section
-{
+.section {
     padding-top: 94px;
     padding-bottom: 94px;
-    @media (max-width: 1200px)
-    {
+    @media (max-width: 1200px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }    
+    @media (max-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        &:nth-child(3) {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }    
+    @media (max-width: 480px) {
         padding-top: 60px;
         padding-bottom: 60px;
     }
