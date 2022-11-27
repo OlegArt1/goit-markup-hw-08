@@ -1,14 +1,10 @@
 /* ==========HEADER========== */
 .header {
-    width: 100%;
     height: auto;
     border-bottom: 1px solid var(--border-bottom-header-color);
 }
 .header__container {
     @extend %list;
-    @media screen and (max-width: 1200px) {
-        width: 100%;
-    }
 }
 .header__navigation {
     @extend %list;

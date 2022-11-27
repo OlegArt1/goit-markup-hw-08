@@ -1,13 +1,17 @@
 /* ==========DESCRIPTION========== */
 .description__list {
     @extend %list-justify;
-    flex-direction: row;
-    flex-wrap: wrap;
     gap: 30px;
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     @media screen and (max-width: 1200px) {
+        flex-direction: row;
         flex-wrap: wrap;
     }
     @media screen and (max-width: 768px) {
+        flex-direction: row;
         flex-wrap: wrap;
     }
     @media screen and (max-width: 480px) {
@@ -16,50 +20,53 @@
     }
 }
 .description__item {
-    width: 270px;
-    @media screen and (max-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         width: 270px;
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1200px) {
         width: 354px;
+    }
+    @media screen and (max-width: 768px) {
+        width: 100%;
+     // width: 450px;
     }
     @media screen and (max-width: 480px) {
         width: 100%;
     }
 }
 .description__article-block {
-    width: 270px;
     height: auto;
-    @media screen and (max-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         width: 270px;
-        height: auto;
-    }    
-    @media screen and (max-width: 768px) {
+    }
+    @media screen and (max-width: 1200px) {
         width: 354px;
-        height: auto;
-    }    
+    }
+    @media screen and (max-width: 768px) {
+        width: 100%;
+     // width: 450px;
+    }
     @media screen and (max-width: 480px) {
         width: 100%;
-        height: auto;
     }
 }
 .description__block-image {
-    width: 270px;
     height: 120px;
     @extend %list;
     border-radius: 4px;
     background-color: var(--light-gray-color);
-    @media screen and (max-width: 1200px) {
+    @media (min-width: 1200px) {
         width: 270px;
-        height: 120px;
     }
-    @media screen and (max-width: 768px) {
+    @media (max-width: 1200px) {
         width: 354px;
-        height: 120px;
     }
-    @media screen and (max-width: 480px) {
+    @media (max-width: 768px) {
         width: 100%;
-        height: 120px;
+     // width: 450px;
+    }
+    @media (max-width: 480px) {
+        width: 100%;
     }
 }
 .description__block-text {
@@ -73,6 +80,9 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--black-color);
+    @media (min-width: 1200px) {
+        text-align: left;
+    }
     @media (max-width: 1200px) {
         text-align: left;
     }
