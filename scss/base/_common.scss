@@ -8,12 +8,14 @@ body {
     text-decoration: none;
 }
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @media (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
     @media (max-width: 1200px) {
         padding-top: 60px;
         padding-bottom: 60px;
-    }    
+    }
     @media (max-width: 768px) {
         padding-top: 60px;
         padding-bottom: 60px;
@@ -21,7 +23,7 @@ body {
             padding-top: 0;
             padding-bottom: 0;
         }
-    }    
+    }
     @media (max-width: 480px) {
         padding-top: 60px;
         padding-bottom: 60px;
