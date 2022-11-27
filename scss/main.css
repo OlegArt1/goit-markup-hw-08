@@ -609,14 +609,12 @@ body {
 
 /* ==========HEADER========== */
 .header {
-  /* position: fixed; */
   width: 100%;
   height: auto;
   border-bottom: 1px solid var(--border-bottom-header-color);
-  background-color: var(--white-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .header__container {
     width: 100%;
   }
@@ -1161,9 +1159,9 @@ body {
 }
 @media screen and (max-width: 1200px) {
   .services__title {
-    max-width: 696px;
-    font-size: 44px;
-    line-height: 1.36;
+    max-width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1204,7 +1202,7 @@ body {
 }
 @media screen and (max-width: 1200px) {
   .services__button {
-    width: 216px;
+    width: 200px;
     height: 50px;
     font-size: 16px;
   }
@@ -1378,7 +1376,8 @@ body {
 }
 @media (max-width: 1200px) {
   .gallery__title {
-    margin-bottom: 30px;
+    margin-bottom: 0;
+    font-size: 0;
   }
 }
 @media (max-width: 768px) {
@@ -1444,7 +1443,7 @@ body {
 }
 @media screen and (max-width: 1200px) {
   .gallery__item {
-    width: 370px;
+    width: 0;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1464,8 +1463,10 @@ body {
 }
 @media screen and (max-width: 1200px) {
   .gallery__image {
-    width: 370px;
-    height: 294px;
+    width: 0;
+    height: 0;
+    /* width: 370px;
+       height: 294px; */
   }
 }
 @media screen and (max-width: 768px) {
@@ -1489,10 +1490,6 @@ body {
 /* ==========TEAM========== */
 .team {
   background: var(--light-gray-color);
-}
-
-.team__container {
-  width: 100%;
 }
 
 .team__title {
@@ -1742,10 +1739,25 @@ body {
 /* ==========PRODUCTs========== */
 @media screen and (max-width: 1200px) {
   .product__container {
-    width: 100%;
+    width: 1000px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .product__container {
+    width: 800px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .product__container {
+    width: 768px;
   }
 }
 @media screen and (max-width: 768px) {
+  .product__container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
   .product__container {
     width: 100%;
   }

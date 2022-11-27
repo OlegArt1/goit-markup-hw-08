@@ -1,14 +1,12 @@
 /* ==========HEADER========== */
 .header {
-    /* position: fixed; */
     width: 100%;
     height: auto;
     border-bottom: 1px solid var(--border-bottom-header-color);
-    background-color: var(--white-color);
 }
 .header__container {
     @extend %list;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1200px) {
         width: 100%;
     }
 }
