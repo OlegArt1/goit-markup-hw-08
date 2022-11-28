@@ -56,11 +56,11 @@
         flex-direction: row;
         flex-wrap: wrap;
     }
-    @media screen and (max-width: 1200px) {
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
         flex-direction: row;
         flex-wrap: wrap;
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (min-width: 480px) and (max-width: 768px) {
         flex-direction: row;
         flex-wrap: wrap;
     }
@@ -74,16 +74,16 @@
     @media screen and (min-width: 1200px) {
         width: 370px;
     }
-    @media screen and (max-width: 1200px) {
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
         width: 354px;
     }
-    @media screen and (max-width: 768px) {
-     // width: 450px;
-        width: 100%;
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        width: 450px;
+     // width: 100%;
     }
     @media screen and (max-width: 480px) {
-     // width: 100%;
-        width: auto;
+     // width: 450px;
+        width: 100%;
     }
 }
 .product__article-block {
@@ -91,16 +91,16 @@
     @media screen and (min-width: 1200px) {
         width: 370px;
     }
-    @media screen and (max-width: 1200px) {
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
         width: 354px;
     }
-    @media screen and (max-width: 768px) {
-     // width: 450px;
-        width: 100%;
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        width: 450px;
+     // width: 100%;
     }
     @media screen and (max-width: 480px) {
-     // width: 100%;
-        width: auto;
+     // width: 450px;
+        width: 100%;
     }
 }
 .product__link {
@@ -125,19 +125,19 @@
 }
 .product__image {
     height: 294px;
-    @media (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         width: 370px;
     }
-    @media (max-width: 1200px) {
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
         width: 354px;
     }
-    @media (max-width: 768px) {  
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        width: 450px;
+     // width: 100%;
+    }
+    @media screen and (max-width: 480px) {
      // width: 450px;
         width: 100%;
-    }
-    @media (max-width: 480px) {
-     // width: 100%;
-        width: auto;
     }
 }
 .product__overlay {
