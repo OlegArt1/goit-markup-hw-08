@@ -465,7 +465,7 @@ body {
   height: 30px;
   padding: 0;
   border-radius: 50%;
-  border: 1px solid var(--border-modal-color);
+  border: 1px solid var(--white-color);
   background-color: transparent;
 }
 
