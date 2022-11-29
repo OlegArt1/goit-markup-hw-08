@@ -3,16 +3,13 @@
     padding-right: 15px;
     margin: 0 auto;
     @media (min-width: 1200px) {
-     // width: 100%;
         width: 1200px;
     }
     @media (max-width: 1200px) {
-     // width: 100%;
         width: 768px;
     }
     @media (max-width: 768px) {
-        width: 100%;
-     // width: 480px;
+        width: 480px;
     }
     @media (max-width: 480px) {
         width: 100%;
