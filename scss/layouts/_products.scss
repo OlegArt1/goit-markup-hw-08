@@ -1,22 +1,25 @@
 .product__button-list {
     width: 100%;
-    margin-bottom: 50px;
     @extend %list;
     gap: 8px;
     @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
         flex-direction: row;
         flex-wrap: wrap;
     }
     @media screen and (max-width: 1200px) {
+        margin-bottom: 30px;
         flex-direction: row;
         flex-wrap: wrap;
     }
     @media screen and (max-width: 768px) {
+        margin-bottom: 40px;
         justify-content: flex-start;
         flex-direction: row;
         flex-wrap: wrap;
     }
     @media screen and (max-width: 480px) {
+        margin-bottom: 40px;
         justify-content: flex-start;
         flex-direction: row;
         flex-wrap: wrap;

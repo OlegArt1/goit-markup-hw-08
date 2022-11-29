@@ -17,8 +17,6 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 528px;
-    min-height: 581px;
     transform: translate(-50%, -50%) rotate(0);
     transition: transform 400ms linear, 
                 border-radius 400ms linear;
@@ -31,15 +29,20 @@
     }
     @media (min-width: 1200px) {
         width: 528px;
-        height: 581px;
+        min-height: 581px;
     }
     @media (max-width: 1200px) {
         width: 450px;
-        height: 609px;        
+        min-height: 609px;        
+    }
+    @media (max-width: 768px) {
+        width: 450px;
+        min-height: 609px;
     }
     @media (max-width: 480px) {
+     // width: 450px;
         width: 420px;
-        height: 600px;
+        height: auto;
     }
 }
 .modal__button-close {
@@ -63,6 +66,7 @@
 .modal__wrapper-block {
     padding-left: 40px;
     padding-right: 40px;
+    padding-bottom: 40px;
 }
 .modal__title {
     margin-top: 40px;
@@ -83,20 +87,14 @@
 .modal__field {
     margin-bottom: 10px;
     &:nth-child(3) {
-        padding-left: 13px;
-        padding-right: 13px;
         margin-top: 20px;
         margin-bottom: 0;
         @extend %list;
-        @media (max-width: 1200px) {
+        @media (min-width: 1200px) {
             padding-left: 13px;
             padding-right: 13px;
         }
-        @media (max-width: 768px) {
-            padding-left: 6px;
-            padding-right: 0;
-        }
-        @media (max-width: 480px) {
+        @media (max-width: 1200px) {
             padding-left: 0;
             padding-right: 0;
         }
@@ -233,17 +231,5 @@
         height: 50px;
         font-size: 16px;
         line-height: 1.88;
-    }
-    @media (max-width: 768px) {
-        width: 180px;
-        height: 45px;
-        font-size: 14px;
-        line-height: 2.14;
-    }
-    @media (max-width: 480px) {
-        width: 160px;
-        height: 40px;
-        font-size: 12px;
-        line-height: 2.5;
     }
 }
